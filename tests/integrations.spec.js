@@ -94,6 +94,7 @@ describe("Testes rota /products", () => {
   });
 
   it("Testando listagem de produtos por id da categoria", async () => {
+    
     const response = await request(app).get(
       `/products/category/${testCategory.id}`
     );
